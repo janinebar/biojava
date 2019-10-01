@@ -1,0 +1,799 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.biojava:biojava-structure:jar:5.3.1-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ org.biojava:biojava:5.3.1-SNAPSHOT, /Users/janine/janinegit/biojava/pom.xml, line 343, column 13
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.biojava:biojava:pom:5.3.1-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 343, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 13 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 13 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] biojava                                                            [pom]
+[INFO] biojava-core                                                       [jar]
+[INFO] biojava-alignment                                                  [jar]
+[INFO] biojava-structure                                                  [jar]
+[INFO] biojava-structure-gui                                              [jar]
+[INFO] biojava-genome                                                     [jar]
+[INFO] biojava-modfinder                                                  [jar]
+[INFO] biojava-ws                                                         [jar]
+[INFO] biojava-protein-disorder                                           [jar]
+[INFO] biojava-aa-prop                                                    [jar]
+[INFO] biojava-survival                                                   [jar]
+[INFO] biojava-ontology                                                   [jar]
+[INFO] biojava-integrationtest                                            [jar]
+[INFO] 
+[INFO] ------------------------< org.biojava:biojava >-------------------------
+[INFO] Building biojava 5.3.1-SNAPSHOT                                   [1/13]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava ---
+[INFO] 
+[INFO] ----------------------< org.biojava:biojava-core >----------------------
+[INFO] Building biojava-core 5.3.1-SNAPSHOT                              [2/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-core ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 45 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-core ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.core.util.TestUncompressInputStream
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.368 sec
+Running org.biojava.nbio.core.TestAmbiguityCompoundSet
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.247 sec
+Running org.biojava.nbio.core.fasta.TestFASTAReader
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.339 sec
+Running org.biojava.nbio.core.search.io.SearchIOTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.034 sec
+Running org.biojava.nbio.core.search.io.blast.BlastXMLParserTest
+createObjects
+getFileExtensions
+setFile
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 3.311 sec
+Running org.biojava.nbio.core.search.io.blast.BlastTabularParserTest
+createObjects
+getFileExtensions
+setFile
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.392 sec
+Running org.biojava.nbio.core.search.io.HspTest
+getAlignment
+hashCode
+equals
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.096 sec
+Running org.biojava.nbio.core.alignment.SimpleSequencePairTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.603 sec
+Running org.biojava.nbio.core.alignment.SimpleAlignedSequenceTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.345 sec
+Running org.biojava.nbio.core.alignment.SimpleProfileTest
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.91 sec
+Running org.biojava.nbio.core.sequence.SequenceViewTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.684 sec
+Running org.biojava.nbio.core.sequence.TestSequenceEquals
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.603 sec
+Running org.biojava.nbio.core.sequence.location.TargetedLocationParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.472 sec
+Running org.biojava.nbio.core.sequence.location.LocationParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.15 sec
+Running org.biojava.nbio.core.sequence.location.LocationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.468 sec
+Running org.biojava.nbio.core.sequence.location.InsdcParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.148 sec
+Running org.biojava.nbio.core.sequence.io.GenbankCookbookTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.318 sec
+Running org.biojava.nbio.core.sequence.io.FastaReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.029 sec
+Running org.biojava.nbio.core.sequence.io.FastaWriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.641 sec
+Running org.biojava.nbio.core.sequence.io.GenbankWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.592 sec
+Running org.biojava.nbio.core.sequence.io.embl.EmblReaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec
+Running org.biojava.nbio.core.sequence.io.ABITracerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.256 sec
+Running org.biojava.nbio.core.sequence.io.CasePreservingProteinSequenceCreatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.679 sec
+Running org.biojava.nbio.core.sequence.io.GenbankReaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.847 sec
+Running org.biojava.nbio.core.sequence.io.GenericFastaHeaderParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.733 sec
+Running org.biojava.nbio.core.sequence.EditSequenceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.767 sec
+Running org.biojava.nbio.core.sequence.JoiningSequenceReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.372 sec
+Running org.biojava.nbio.core.sequence.DNATest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.279 sec
+Running org.biojava.nbio.core.sequence.TranslationTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.1 sec
+Running org.biojava.nbio.core.sequence.loader.SimpleGenbankProxySequenceReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.936 sec
+Running org.biojava.nbio.core.sequence.loader.GenbankProxySequenceReaderTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.175 sec
+Running org.biojava.nbio.core.sequence.compound.AmbiguityDNACompoundTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.34 sec
+Running org.biojava.nbio.core.sequence.MultipleSequenceAlignmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.583 sec
+
+Results :
+
+Tests run: 244, Failures: 0, Errors: 0, Skipped: 6
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-core ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-core/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-core' with 210 classes
+[INFO] 
+[INFO] -------------------< org.biojava:biojava-alignment >--------------------
+[INFO] Building biojava-alignment 5.3.1-SNAPSHOT                         [3/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.biojava.thirdparty:forester:jar:1.038 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-alignment ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-alignment ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-alignment ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-alignment/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-alignment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-alignment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-alignment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-alignment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-alignment ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-alignment/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.alignment.TestDNAAlignment
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.825 sec
+Running org.biojava.nbio.alignment.GuideTreeTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.415 sec
+Running org.biojava.nbio.alignment.FractionalIdentityScorerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.382 sec
+Running org.biojava.nbio.alignment.io.TestStockholmParser
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.205 sec
+Running org.biojava.nbio.alignment.SimpleGapPenaltyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec
+Running org.biojava.nbio.alignment.SimpleSubstitutionMatrixTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.4 sec
+Running org.biojava.nbio.alignment.SimpleProfileProfileAlignerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.316 sec
+Running org.biojava.nbio.alignment.TestSubOptimalMSA
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.52 sec
+Running org.biojava.nbio.alignment.NeedlemanWunschTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.711 sec
+Running org.biojava.nbio.alignment.routines.GuanUberbacherTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.38 sec
+Running org.biojava.nbio.alignment.routines.AlignerHelperTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec
+Running org.biojava.nbio.alignment.LocalAlignmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.44 sec
+Running org.biojava.nbio.alignment.SmithWatermanTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.426 sec
+Running org.biojava.nbio.alignment.FractionalSimilarityScorerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.128 sec
+Running org.biojava.nbio.alignment.SimpleProfilePairTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.337 sec
+Running org.biojava.nbio.alignment.aaindex.TestAAINDEXLoading
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 sec
+Running org.biojava.nbio.phylo.TestForesterWrapper
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.337 sec
+Running org.biojava.nbio.phylo.TestDistanceTreeEvaluator
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.125 sec
+
+Results :
+
+Tests run: 126, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-alignment ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-alignment/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-alignment' with 56 classes
+[INFO] 
+[INFO] -------------------< org.biojava:biojava-structure >--------------------
+[INFO] Building biojava-structure 5.3.1-SNAPSHOT                         [4/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-structure ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-structure ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-structure ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-structure/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-structure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 61 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-structure ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 521 source files to /Users/janine/janinegit/biojava/biojava-structure/target/classes
+[INFO] /Users/janine/janinegit/biojava/biojava-structure/src/main/java/org/biojava/nbio/structure/io/mmcif/SimpleMMcifConsumer.java: Some input files use or override a deprecated API.
+[INFO] /Users/janine/janinegit/biojava/biojava-structure/src/main/java/org/biojava/nbio/structure/io/mmcif/SimpleMMcifConsumer.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-structure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 93 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-structure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-structure ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-structure ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] -----------------< org.biojava:biojava-structure-gui >------------------
+[INFO] Building biojava-structure-gui 5.3.1-SNAPSHOT                     [5/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-structure-gui ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-structure-gui ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-structure-gui ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-structure-gui/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-structure-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 49 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-structure-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 139 source files to /Users/janine/janinegit/biojava/biojava-structure-gui/target/classes
+[INFO] /Users/janine/janinegit/biojava/biojava-structure-gui/src/main/java/org/biojava/nbio/structure/align/gui/MenuCreator.java: Some input files use or override a deprecated API.
+[INFO] /Users/janine/janinegit/biojava/biojava-structure-gui/src/main/java/org/biojava/nbio/structure/align/gui/MenuCreator.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/janine/janinegit/biojava/biojava-structure-gui/src/main/java/org/biojava/nbio/structure/gui/BiojavaJmol.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/janine/janinegit/biojava/biojava-structure-gui/src/main/java/org/biojava/nbio/structure/gui/BiojavaJmol.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-structure-gui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/janine/janinegit/biojava/biojava-structure-gui/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-structure-gui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-structure-gui ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-structure-gui ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] ---------------------< org.biojava:biojava-genome >---------------------
+[INFO] Building biojava-genome 5.3.1-SNAPSHOT                            [6/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-genome ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-genome ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-genome ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-genome/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-genome ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-genome ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 52 source files to /Users/janine/janinegit/biojava/biojava-genome/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-genome ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 83 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-genome ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-genome ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-genome/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.genome.io.fastq.IlluminaFastqReaderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 sec
+Running org.biojava.nbio.genome.io.fastq.SangerFastqWriterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec
+Running org.biojava.nbio.genome.io.fastq.StreamingFastqParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running org.biojava.nbio.genome.io.fastq.SangerFastqReaderTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec
+Running org.biojava.nbio.genome.io.fastq.FastqVariantTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running org.biojava.nbio.genome.io.fastq.IlluminaFastqWriterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec
+Running org.biojava.nbio.genome.io.fastq.ConvertTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec
+Running org.biojava.nbio.genome.io.fastq.FastqBuilderTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 sec
+Running org.biojava.nbio.genome.io.fastq.FastqToolsTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.443 sec
+Running org.biojava.nbio.genome.io.fastq.SolexaFastqWriterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec
+Running org.biojava.nbio.genome.io.fastq.SolexaFastqReaderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 sec
+Running org.biojava.nbio.genome.io.fastq.FastqTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
+Running org.biojava.nbio.genome.GeneFeatureHelperTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.923 sec
+Running org.biojava.nbio.genome.TestGenomeMapping
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.247 sec
+Running org.biojava.nbio.genome.TestIssue355
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 sec
+Running org.biojava.nbio.genome.TestLocation
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec
+Running org.biojava.nbio.genome.FeatureListTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Running org.biojava.nbio.genome.TestChromosomeMappingTools
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.481 sec
+
+Results :
+
+Tests run: 210, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-genome ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-genome/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-genome' with 55 classes
+[INFO] 
+[INFO] -------------------< org.biojava:biojava-modfinder >--------------------
+[INFO] Building biojava-modfinder 5.3.1-SNAPSHOT                         [7/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-modfinder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-modfinder ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-modfinder ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-modfinder/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-modfinder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-modfinder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-modfinder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-modfinder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-modfinder ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-modfinder/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.protmod.phosphosite.TestAcetylation
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.031 sec
+Running org.biojava.nbio.protmod.structure.ProteinModificationParserTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.79 sec
+Running org.biojava.nbio.protmod.structure.ProteinModificationRegistryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.658 sec
+Running org.biojava.nbio.protmod.structure.ModifiedCompoundSerializationTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.472 sec
+
+Results :
+
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-modfinder ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-modfinder/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-modfinder' with 21 classes
+[INFO] 
+[INFO] -----------------------< org.biojava:biojava-ws >-----------------------
+[INFO] Building biojava-ws 5.3.1-SNAPSHOT                                [8/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-ws ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-ws ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-ws ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-ws/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-ws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/janine/janinegit/biojava/biojava-ws/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-ws ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /Users/janine/janinegit/biojava/biojava-ws/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-ws ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/janine/janinegit/biojava/biojava-ws/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-ws ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-ws ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-ws/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.ws.hmmer.TestRemoteHmmerScan
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.2 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-ws ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-ws/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-ws' with 16 classes
+[INFO] 
+[INFO] ----------------< org.biojava:biojava-protein-disorder >----------------
+[INFO] Building biojava-protein-disorder 5.3.1-SNAPSHOT                  [9/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-protein-disorder ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-protein-disorder ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-protein-disorder ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-protein-disorder/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-protein-disorder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-protein-disorder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /Users/janine/janinegit/biojava/biojava-protein-disorder/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-protein-disorder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-protein-disorder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-protein-disorder ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-protein-disorder/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.ronn.NonstandardProteinCompoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.436 sec
+Running org.biojava.nbio.ronn.JronnTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.833 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-protein-disorder ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-protein-disorder/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-protein-disorder' with 16 classes
+[INFO] 
+[INFO] --------------------< org.biojava:biojava-aa-prop >---------------------
+[INFO] Building biojava-aa-prop 5.3.1-SNAPSHOT                          [10/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-aa-prop ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-aa-prop ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-aa-prop ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-aa-prop/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-aa-prop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-aa-prop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to /Users/janine/janinegit/biojava/biojava-aa-prop/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-aa-prop ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-aa-prop ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-aa-prop ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-aa-prop/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.aaproperties.PeptidePropertiesImplTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.032 sec
+Running org.biojava.nbio.aaproperties.xml.ElementTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.998 sec
+Running org.biojava.nbio.aaproperties.xml.AminoAcidTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.195 sec
+Running org.biojava.nbio.aaproperties.CommandPromptTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SequenceName,MolecularWeight,ExtinctionCoefficient_True,ExtinctionCoefficient_False,IsoelectricPoint
+SAOV_0114,53660.5723,41370.0,41370.0,4.986
+SAOV_0094,45884.0164,57760.0,57760.0,8.5193
+SAA6008_00126,95002.026,55240.0,55740.0,5.7263
+SequenceName,A,N,MolecularWeight
+SAOV_0114,0.101,0.0525,53660.5723
+SAOV_0094,0.0537,0.0767,45884.0164
+SAA6008_00126,0.0955,0.0414,95002.026
+SequenceName,A,N,MolecularWeight
+SAOV_0114,0.101,0.0525,53660.5723
+SAOV_0094,0.0537,0.0767,45884.0164
+SAA6008_00126,0.0955,0.0414,95002.026
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.013 sec
+Running org.biojava.nbio.aaproperties.CookBookTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.628 sec
+Running org.biojava.nbio.aaproperties.GenbankCommandPromptTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/Users/janine/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+SequenceName,MolecularWeight,ExtinctionCoefficient_True,ExtinctionCoefficient_False,IsoelectricPoint
+NP_000257                133 aa            linear   PRI 27-MAR-2008,15043.5262,5960.0,6585.0,9.1715
+SequenceName,A,N,MolecularWeight
+NP_000257                133 aa            linear   PRI 27-MAR-2008,0.0451,0.0075,15043.5262
+SequenceName,A,N,MolecularWeight
+NP_000257                133 aa            linear   PRI 27-MAR-2008,0.0451,0.0075,15043.5262
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.467 sec
+
+Results :
+
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-aa-prop ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-aa-prop/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-aa-prop' with 33 classes
+[INFO] 
+[INFO] --------------------< org.biojava:biojava-survival >--------------------
+[INFO] Building biojava-survival 5.3.1-SNAPSHOT                         [11/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-survival ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-survival ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-survival ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-survival/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-survival ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-survival ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-survival ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/janine/janinegit/biojava/biojava-survival/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-survival ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-survival ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-survival ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --------------------< org.biojava:biojava-ontology >--------------------
+[INFO] Building biojava-ontology 5.3.1-SNAPSHOT                         [12/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-ontology ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-ontology ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-ontology ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-ontology/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-ontology ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-ontology ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to /Users/janine/janinegit/biojava/biojava-ontology/target/classes
+[INFO] /Users/janine/janinegit/biojava/biojava-ontology/src/main/java/org/biojava/nbio/ontology/IntegerOntology.java: Some input files use or override a deprecated API.
+[INFO] /Users/janine/janinegit/biojava/biojava-ontology/src/main/java/org/biojava/nbio/ontology/IntegerOntology.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/janine/janinegit/biojava/biojava-ontology/src/main/java/org/biojava/nbio/ontology/Ontology.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/janine/janinegit/biojava/biojava-ontology/src/main/java/org/biojava/nbio/ontology/Ontology.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-ontology ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-ontology ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-ontology ---
+[INFO] Surefire report directory: /Users/janine/janinegit/biojava/biojava-ontology/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.biojava.nbio.ontology.TestParseSBO
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.036 sec
+Running org.biojava.nbio.ontology.TestParseOBO
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.593 sec
+Running org.biojava.nbio.ontology.TestOboFileParsing
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.021 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-ontology ---
+[INFO] Loading execution data file /Users/janine/janinegit/biojava/biojava-ontology/target/jacoco.exec
+[INFO] Analyzed bundle 'biojava-ontology' with 47 classes
+[INFO] 
+[INFO] ----------------< org.biojava:biojava-integrationtest >-----------------
+[INFO] Building biojava-integrationtest 5.3.1-SNAPSHOT                  [13/13]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-java) @ biojava-integrationtest ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ biojava-integrationtest ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (default) @ biojava-integrationtest ---
+[INFO] argLine set to -javaagent:/Users/janine/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/Users/janine/janinegit/biojava/biojava-integrationtest/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ biojava-integrationtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/janine/janinegit/biojava/biojava-integrationtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ biojava-integrationtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ biojava-integrationtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ biojava-integrationtest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.14.1:test (default-test) @ biojava-integrationtest ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:report (report) @ biojava-integrationtest ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for biojava 5.3.1-SNAPSHOT:
+[INFO] 
+[INFO] biojava ............................................ SUCCESS [  0.269 s]
+[INFO] biojava-core ....................................... SUCCESS [01:48 min]
+[INFO] biojava-alignment .................................. SUCCESS [ 38.160 s]
+[INFO] biojava-structure .................................. SUCCESS [ 10.201 s]
+[INFO] biojava-structure-gui .............................. SUCCESS [  2.306 s]
+[INFO] biojava-genome ..................................... SUCCESS [ 28.668 s]
+[INFO] biojava-modfinder .................................. SUCCESS [ 21.448 s]
+[INFO] biojava-ws ......................................... SUCCESS [  1.692 s]
+[INFO] biojava-protein-disorder ........................... SUCCESS [ 25.191 s]
+[INFO] biojava-aa-prop .................................... SUCCESS [ 18.032 s]
+[INFO] biojava-survival ................................... SUCCESS [  0.060 s]
+[INFO] biojava-ontology ................................... SUCCESS [  8.457 s]
+[INFO] biojava-integrationtest ............................ SUCCESS [  0.095 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:23 min
+[INFO] Finished at: 2019-09-30T20:54:03-05:00
+[INFO] ------------------------------------------------------------------------
